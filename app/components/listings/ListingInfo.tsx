@@ -26,6 +26,8 @@ interface ListingInfoProps {
 				description: string;
 		  }
 		| undefined;
+
+	// | undefined;
 	locationValue: string;
 }
 
@@ -76,7 +78,7 @@ const ListingInfo: React.FC<ListingInfoProps> = ({
 			<hr />
 			{category && (
 				<ListingCategory
-					icon={category.icon}
+					icon={category?.icon}
 					label={category?.label}
 					description={category?.description}
 				/>
