@@ -23,7 +23,7 @@ interface ListingInfoProps {
 		| {
 				icon: IconType;
 				label: string;
-				description?: string | undefined;
+				description?: string;
 		  }
 		| undefined;
 
@@ -78,7 +78,7 @@ const ListingInfo: React.FC<ListingInfoProps> = ({
 			{category && (
 				<ListingCategory
 					icon={category.icon}
-					label={category?.label}
+					label={category.label}
 					description={category.description}
 				/>
 			)}
