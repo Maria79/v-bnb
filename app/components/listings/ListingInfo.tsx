@@ -23,7 +23,7 @@ interface ListingInfoProps {
 		| {
 				icon: IconType;
 				label: string;
-				description?: string;
+				description?: string | undefined;
 		  }
 		| undefined;
 
