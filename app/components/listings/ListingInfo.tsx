@@ -22,11 +22,10 @@ interface ListingInfoProps {
 	category:
 		| {
 				icon: IconType;
-				label: string;
+				label?: string;
 				description?: string;
 		  }
 		| undefined;
-
 	locationValue: string;
 }
 

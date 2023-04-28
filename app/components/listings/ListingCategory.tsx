@@ -4,7 +4,7 @@ import { IconType } from 'react-icons';
 
 interface CategoryViewProps {
 	icon: IconType;
-	label: string;
+	label?: string;
 	description?: string;
 }
 
