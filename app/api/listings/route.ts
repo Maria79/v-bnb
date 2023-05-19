@@ -33,7 +33,6 @@ export async function POST(request: Request) {
 	});
 
 	const listing = await prisma.listing.create({
-		// Use the `prisma` client to create a new record in the `listing` table
 		data: {
 			title,
 			description,
